@@ -18,4 +18,15 @@ public class listyTablicowe {
         zmieniany.setCharAt(zmieniany.length()-1, temp);
         return zmieniany.toString();
     }
+    public static void choinka(int n){
+        for(int i=0; i<n; i++){
+            for(int j=n-1;j>(0);j--){
+                System.out.print("\u0000");
+            }
+            for(int k=0;k<(2*i); k++){
+                System.out.print("*");
+            }
+            System.out.printf("*\n");
+        }
+    }
 }
