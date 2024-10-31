@@ -1,1 +1,44 @@
+package Zad7;
 
+public class Main {
+    public static void main(String[] args) {
+
+    }
+}
+package Zad7;
+public class Behicle{
+    public String brand;
+    public String model;
+    public int yearOfProduction;
+//konstruktor year nie wiekszy od aktualnego if wyższy aktualny, brand i model nie null i nie puste
+//
+    public Person(String brand, String model, int yearOfProduction){
+    if(brand==null | brand.equals(""){
+        this.brand="";
+    }
+    else{
+        this.brand=brand;
+    }
+    if(model==null | model.equals("")){
+        this.model="";
+    }
+    else{
+        this.model=model;
+    }
+    if(yearOfProduction>2024){
+        this.yearOfProduction=2024;
+    }
+    else{
+          this.yearOfProduction=yearOfProduction;
+    }
+@override;
+    public String toString(){
+        return "Vehicle" + brand + " " + model + ", " + "Year:" + yearOfProduction + ".";
+
+    }
+@override;
+    public boolean equals(Object o){
+        
+    }
+
+}
